@@ -1,0 +1,338 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+     display: flex;
+     align-items: center;
+     position: relative;
+     top: 0px;
+     
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* navigation bar: logo and image */
+ #logo{
+     margin: 10px 34px;
+ }
+ #logo img{
+     height: 68px;
+     margin: 3px 6px;
+ }
+
+/* navigation bar: List styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Baloo Bhaina 2', cursive;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+	
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  padding: 5px 200px;
+  justify-content: center;
+  background-image:url(src/main/webapp/images/kidsA.jpg);
+  align-items: center;
+  
+}
+#home::before{
+    content: "";
+    position: absolute;
+  /*background-color:gray;*/
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+
+}
+#home h1{
+    color: rgb(19, 18, 18);
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#home :hover{
+    color:rgb(252, 247, 247);
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+/*
+/*OUR SAMPLES*/
+/*
+#service-container{
+	background-color: black;
+}
+.box-area{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; 
+}
+.single-box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: auto;
+	border-radius: 18px;
+	background-color:gray;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	transition: 3s;
+}
+#img-area .img{
+	  display: block;
+	  justify-content: center;
+	  align-items: center;
+	  width: 160px;
+	  height: 160px;
+	  border: 6px solid #ddd;
+	  border-radius: 23px;
+	  margin-bottom: 10px;
+	  padding: 20px;
+	  -webkit-background-size: cover;
+	  background-size: cover;
+	  background-position: center center;
+}
+.header-text
+{
+	font-size: 24px;
+	font-weight:500;
+	line-height: 48px;
+	color: black;
+}
+.img-text{
+	font-family: poppins;
+	padding-top: 20px;
+	
+}
+.img-text p{
+	font-size: 15px;
+	font-weight:400;
+	line-height: 30px;
+	
+}
+.single-box:hover{
+	background: green;
+	color: #fff;
+}
+
+
+#oursamples{
+	background-color:yellow-green;
+}
+#oursamples.box{
+    border: 2px solid rgb(138, 80, 80);
+    margin: 25px 6px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: rgb(182 185 249);
+
+}
+#oursamples .box :hover{
+    background-color: rgb(223, 173, 173)
+    
+
+}
+#oursamples .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 23px;
+    
+}
+#oursamples .box p{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+*/
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box input,
+#contact-box textarea :hover{
+    color: black;
+    background-color: rgb(199, 152, 152);
+} 
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+
+.h-primary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 3.8rem;
+    padding: 10px;
+    
+}
+.h-secondary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 2.3rem;
+    padding: 10px;
+
+}
+
+.btn{
+    padding: 6px 25px;
+    border: 2px solid rgb(97, 96, 96);
+    background-color: rgb(193 35 35);
+    color: rgb(20, 16, 16);
+    margin: 11px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
+/*
+ .contact-section
+ {
+ background-color: black;
+ background-size: cover;
+ padding: 40px 0;
+ 
+ }
+.contact-section h1{
+text-align: center;
+color: #ddd;
+      
+}
+.border{
+width: 100px;
+height: 10px;
+background:#34495e;
+margin: 40px auto;
+	
+}
+.contact-form
+{
+ max-width: 600px;
+ margin: auto;
+ padding: 0 10px;
+ overflow: hidden;
+ 
+}
+.contact-form .text{
+	display: block;
+    justify-content: center;
+    width: 100%;
+	box-sizing: border-box;
+	margin: 0 16px;
+	border: 0;
+	background: #111;
+	padding:20px 40px;
+	outline: none;
+	color:#ddd;
+	transition: 0.5s;	
+}
+.contact-form .text.focus{
+	 box-shadow:0 0 10px #34495e;
+	 
+}
+textarea.contact-form .text{
+	resize:none;
+	height: 120px;
+		
+}
+.contact-form .btn{
+	float: right;
+	border: 0;
+	background:#34495e;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius:20px;
+	cursor: pointer;
+	transition: 0.5s;	
+}
+.contact-form .btn:hover{
+	background: #2980b9;
+}
+*/
+
+
+
+
